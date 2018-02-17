@@ -12,3 +12,7 @@ The controller for the Halo drone is equally as innovative as the drone. This is
 All mechanical part files for the project (source files are in Fusion 360 archive file .f3d or .f3z)
 ### ECAD Files: 
 All electronics schematics, libraries and Autodesk EAGLE source .sch and .brd files
+### Block Diagrams
+Higher-level system block diagrams for the Drone and Controller
+### Software:
+For this project's source code, see our other repository: https://github.com/ThanicsRobotics/ProjectHalo
