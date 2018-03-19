@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -144,16 +144,17 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyODQ3M2Rj" projecturn="a.cGVyc29uYWw6dWUyODQ3M2RjIzIwMTYxMDI3NDg3NTA0MzE" f3durn="urn:adsk.wipprod:dm.lineage:1FK3ZzDbTn6NrXZ1WJSimA" pcbguid="859af4cb-aa78-4ff5-ad26-b2f13e95342d" lastpulledtime="" lastsyncedchangeguid="06fd8e3c-64e3-8ead-d452-ef17a5942573"/>
 <plain>
-<wire x1="-1.016" y1="57.15" x2="26.34" y2="57.15" width="0" layer="20"/>
-<wire x1="26.34" y1="57.15" x2="26.594" y2="79.492" width="0" layer="20"/>
-<wire x1="26.594" y1="79.492" x2="-0.762" y2="79.492" width="0" layer="20"/>
-<wire x1="-0.762" y1="79.492" x2="-1.016" y2="57.15" width="0" layer="20"/>
+<wire x1="-1.016" y1="56.8452" x2="26.34" y2="56.8452" width="0" layer="20"/>
+<wire x1="26.34" y1="56.8452" x2="26.594" y2="79.492" width="0" layer="20"/>
+<wire x1="26.594" y1="79.492" x2="-1.016" y2="79.492" width="0" layer="20"/>
+<wire x1="-1.016" y1="79.492" x2="-1.016" y2="56.8452" width="0" layer="20"/>
 <text x="22.4028" y="58.8264" size="1.778" layer="26" rot="MR0">Sensor 
 Board v3</text>
 <hole x="24.13" y="59.436" drill="3"/>
-<hole x="24.13" y="76.962" drill="3"/>
-<hole x="0.762" y="58.928" drill="3"/>
+<hole x="24.384" y="77.3176" drill="3"/>
+<hole x="0.9144" y="58.7756" drill="3"/>
 <text x="0.508" y="67.818" size="1.016" layer="21" rot="R90">VCC</text>
 <text x="0.508" y="75.692" size="1.016" layer="21" rot="R90">GND</text>
 <text x="0.508" y="73.914" size="1.016" layer="21" rot="R90">E</text>
@@ -164,6 +165,7 @@ Board v3</text>
 <text x="2.794" y="61.214" size="1.27" layer="21">TT</text>
 <text x="17.272" y="60.706" size="1.27" layer="21">MOTORS</text>
 <text x="17.272" y="58.928" size="1.27" layer="21">BARO</text>
+<text x="14.6812" y="65.1764" size="1.27" layer="21">J9</text>
 </plain>
 <libraries>
 <library name="Ultrasonic Sensor HC-SR04">
@@ -510,6 +512,7 @@ design rules under a new name.</description>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
 <param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -622,7 +625,7 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="TCA6424ARGJR" x="8.636" y="62.6872" size="1.27" layer="27" rot="R315" display="off"/>
 <attribute name="VENDOR" value="Texas Instruments" x="8.636" y="62.6872" size="1.27" layer="27" rot="R315" display="off"/>
 </element>
-<element name="U$3" library="thanics_robotics" package="JST_SH_3POS" value="" x="20.574" y="63.0936"/>
+<element name="J9" library="thanics_robotics" package="JST_SH_3POS" value="" x="20.574" y="63.0936"/>
 <element name="JP1" library="pinhead" package="1X04" value="" x="24.5364" y="69.3928" rot="R270"/>
 <element name="C1" library="0.1uF X7R Ceramic Capacitor" package="0805" value="0.1uF" x="11.7856" y="58.928" rot="R180">
 <attribute name="COPYRIGHT" value="Copyright C 2015 Accelerated Designs. All rights reserved" x="11.7856" y="58.928" size="1.778" layer="27" rot="R180" display="off"/>
@@ -805,14 +808,14 @@ design rules under a new name.</description>
 <polygon width="0.254" layer="1">
 <vertex x="-0.6604" y="79.502"/>
 <vertex x="26.67" y="79.502"/>
-<vertex x="26.416" y="57.15"/>
-<vertex x="-0.9144" y="57.15"/>
+<vertex x="26.3144" y="56.7944"/>
+<vertex x="-1.016" y="56.7944"/>
 </polygon>
 <polygon width="0.254" layer="16">
-<vertex x="-0.7112" y="79.4512"/>
+<vertex x="-1.0668" y="79.502"/>
 <vertex x="26.5684" y="79.4512"/>
-<vertex x="26.3144" y="57.15"/>
-<vertex x="-0.9652" y="57.15"/>
+<vertex x="26.2636" y="56.7436"/>
+<vertex x="-1.016" y="56.7436"/>
 </polygon>
 <contactref element="U2" pad="25"/>
 <contactref element="U2" pad="26"/>
@@ -1031,7 +1034,7 @@ design rules under a new name.</description>
 <wire x1="23.5712" y1="69.088" x2="24.5364" y2="68.1228" width="0.254" layer="16"/>
 </signal>
 <signal name="SDA">
-<contactref element="U$3" pad="1"/>
+<contactref element="J9" pad="1"/>
 <contactref element="U2" pad="30"/>
 <wire x1="10.9534" y1="61.43045625" x2="11.27219375" y2="61.1116625" width="0.1778" layer="1"/>
 <wire x1="12.1404625" y1="61.1116625" x2="11.27219375" y2="61.1116625" width="0.1778" layer="1"/>
@@ -1041,7 +1044,7 @@ design rules under a new name.</description>
 <wire x1="14.6304" y1="63.6016" x2="18.3604" y2="63.6016" width="0.1778" layer="1"/>
 </signal>
 <signal name="SCL">
-<contactref element="U$3" pad="2"/>
+<contactref element="J9" pad="2"/>
 <contactref element="U2" pad="29"/>
 <wire x1="19.964" y1="63.0136" x2="19.964" y2="61.874" width="0.1778" layer="1"/>
 <wire x1="19.964" y1="61.874" x2="19.7612" y2="61.6712" width="0.1778" layer="1"/>
@@ -1055,7 +1058,7 @@ design rules under a new name.</description>
 <wire x1="10.97075" y1="60.706" x2="10.599846875" y2="61.076903125" width="0.1778" layer="1"/>
 </signal>
 <signal name="INT">
-<contactref element="U$3" pad="3"/>
+<contactref element="J9" pad="3"/>
 <contactref element="U2" pad="32"/>
 <wire x1="20.964" y1="63.0136" x2="20.964" y2="63.618" width="0.1778" layer="1"/>
 <wire x1="20.964" y1="63.618" x2="20.3708" y2="64.2112" width="0.1778" layer="1"/>
@@ -1204,6 +1207,11 @@ design rules under a new name.</description>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 </compatibility>
 </eagle>

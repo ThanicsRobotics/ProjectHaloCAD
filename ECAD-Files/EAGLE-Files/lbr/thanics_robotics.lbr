@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.1">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1211,16 +1211,16 @@ Micro B</text>
 <wire x1="2.2" y1="-2.2" x2="2.2" y2="-1.8" width="0.127" layer="21"/>
 </package>
 <package name="DPAK">
-<smd name="1" x="-2.285" y="0" dx="3" dy="1.6" layer="1" rot="R90"/>
-<smd name="3" x="2.285" y="0" dx="3" dy="1.6" layer="1" rot="R90"/>
-<smd name="2" x="0" y="7.18" dx="6.2" dy="5.8" layer="1" rot="R90"/>
-<wire x1="-3.4" y1="0.4" x2="-4.6" y2="0.4" width="0.127" layer="21"/>
-<wire x1="-4.6" y1="0.4" x2="-4.6" y2="7.8" width="0.127" layer="21"/>
-<wire x1="-4.6" y1="7.8" x2="-3.4" y2="7.8" width="0.127" layer="21"/>
-<wire x1="-1.2" y1="0.4" x2="1.2" y2="0.4" width="0.127" layer="21"/>
-<wire x1="3.4" y1="0.4" x2="4.6" y2="0.4" width="0.127" layer="21"/>
-<wire x1="4.6" y1="0.4" x2="4.6" y2="7.8" width="0.127" layer="21"/>
-<wire x1="4.6" y1="7.8" x2="3.2" y2="7.8" width="0.127" layer="21"/>
+<smd name="1" x="-2.3" y="0" dx="2.5" dy="1.5" layer="1" rot="R90"/>
+<smd name="3" x="2.3" y="0" dx="2.5" dy="1.5" layer="1" rot="R90"/>
+<smd name="2" x="0" y="6.9" dx="7" dy="7" layer="1" rot="R90"/>
+<wire x1="-3" y1="1.5" x2="-3" y2="3" width="0.5" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="3" width="0.5" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="3" width="0.5" layer="21"/>
+<wire x1="3" y1="1.5" x2="3" y2="3" width="0.5" layer="21"/>
+<wire x1="4" y1="9.5" x2="4" y2="3.5" width="0.5" layer="21"/>
+<wire x1="-4" y1="9.5" x2="-4" y2="3.5" width="0.5" layer="21"/>
+<text x="-4.5" y="11" size="1.27" layer="21">&gt;NAME</text>
 </package>
 <package name="SOT25-5">
 <smd name="1" x="-0.95" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
@@ -5825,6 +5825,23 @@ Micro B</text>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IRLR8726" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="N_MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DPAK">
+<connects>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
