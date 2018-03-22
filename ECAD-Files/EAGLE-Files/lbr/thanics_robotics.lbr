@@ -5849,6 +5849,23 @@ Micro B</text>
 </device>
 </devices>
 </deviceset>
+<deviceset name="CSTCE16" uservalue="yes">
+<gates>
+<gate name="A" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3-SMD">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="3"/>
+<connect gate="A" pin="GND" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
