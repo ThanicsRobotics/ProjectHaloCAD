@@ -794,20 +794,20 @@
 <pin name="RESET" x="-20.32" y="12.7" length="middle" direction="out"/>
 <pin name="MODE" x="-20.32" y="10.16" length="middle" direction="pas"/>
 <pin name="V7V" x="-20.32" y="7.62" length="middle" direction="pwr"/>
-<pin name="FB2" x="-20.32" y="-12.7" length="middle" direction="out"/>
+<pin name="FB2" x="20.32" y="-40.64" length="middle" direction="out" rot="R180"/>
 <pin name="COMP2" x="-20.32" y="5.08" length="middle" direction="out"/>
 <pin name="SS2" x="-20.32" y="2.54" length="middle" direction="in"/>
-<pin name="BST2" x="-20.32" y="-2.54" length="middle" direction="pas"/>
-<pin name="LX2" x="-20.32" y="-7.62" length="middle" direction="pas"/>
+<pin name="BST2" x="20.32" y="-30.48" length="middle" direction="pas" rot="R180"/>
+<pin name="LX2" x="20.32" y="-35.56" length="middle" direction="pas" rot="R180"/>
 <pin name="PGND2" x="-20.32" y="-22.86" length="middle" direction="pwr"/>
 <pin name="PVIN2" x="-20.32" y="-17.78" length="middle" direction="in"/>
 <pin name="PVIN3" x="-20.32" y="-20.32" length="middle" direction="in"/>
 <pin name="PGND3" x="-20.32" y="-25.4" length="middle" direction="pwr"/>
-<pin name="LX3" x="20.32" y="-35.56" length="middle" direction="pas" rot="R180"/>
-<pin name="BST3" x="20.32" y="-30.48" length="middle" direction="pas" rot="R180"/>
+<pin name="LX3" x="-20.32" y="-7.62" length="middle" direction="pas"/>
+<pin name="BST3" x="-20.32" y="-2.54" length="middle" direction="pas"/>
 <pin name="SS3" x="20.32" y="-17.78" length="middle" direction="in" rot="R180"/>
 <pin name="COMP3" x="20.32" y="-22.86" length="middle" direction="out" rot="R180"/>
-<pin name="FB3" x="20.32" y="-40.64" length="middle" direction="out" rot="R180"/>
+<pin name="FB3" x="-20.32" y="-12.7" length="middle" direction="out"/>
 <pin name="ROSC" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
 <pin name="AGND" x="20.32" y="-10.16" length="middle" direction="pwr" rot="R180"/>
 <pin name="FB1" x="-20.32" y="-40.64" length="middle" direction="out"/>

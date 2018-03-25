@@ -5950,7 +5950,7 @@ MAX3223-MAX3243.pdf</description>
 <gate name="A" symbol="DUAL_1:4_MUX" x="-2.54" y="-2.54"/>
 </gates>
 <devices>
-<device name="TSSOP16" package="TSSOP16">
+<device name="PW" package="TSSOP16">
 <connects>
 <connect gate="A" pin="!E" pad="6"/>
 <connect gate="A" pin="1Y0" pad="12"/>
