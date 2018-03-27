@@ -6,6 +6,7 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="C:/Users/Bill 2012/Documents/Thanics Robotics/ProjectHaloCAD/ECAD-Files/EAGLE-Files/lbr/jst.lbr"
 UsedLibrary="C:/EAGLE-7.7.0/lbr/1000pF-capacitor.lbr"
 UsedLibrary="C:/EAGLE-7.7.0/lbr/100k-resistor.lbr"
 UsedLibrary="C:/EAGLE-7.7.0/lbr/100pF-capacitor.lbr"

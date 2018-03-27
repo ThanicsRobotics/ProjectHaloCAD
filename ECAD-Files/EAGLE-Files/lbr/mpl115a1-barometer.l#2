@@ -152,22 +152,6 @@
 <text x="-4.7244" y="11.6586" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
 <text x="-5.3594" y="9.1186" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
-<symbol name="MPL115A2">
-<pin name="VDD" x="-12.7" y="5.08" length="middle"/>
-<pin name="VDDIO" x="-12.7" y="2.54" length="middle"/>
-<pin name="CAP" x="-12.7" y="0" length="middle"/>
-<pin name="GND" x="-12.7" y="-2.54" length="middle"/>
-<pin name="SCL" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="SDL" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="INT1" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="INT2" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="-12.7" y="15.24" size="3.81" layer="95">&gt;NAME</text>
-<text x="-12.7" y="10.16" size="3.81" layer="95">&gt;VALUE</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MPL115A1" uservalue="yes">
@@ -233,20 +217,9 @@
 </deviceset>
 <deviceset name="MPL115A2">
 <gates>
-<gate name="G$1" symbol="MPL115A2" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="LGA8-M">
-<connects>
-<connect gate="G$1" pin="CAP" pad="2"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="INT1" pad="6"/>
-<connect gate="G$1" pin="INT2" pad="5"/>
-<connect gate="G$1" pin="SCL" pad="8"/>
-<connect gate="G$1" pin="SDL" pad="7"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-<connect gate="G$1" pin="VDDIO" pad="4"/>
-</connects>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
