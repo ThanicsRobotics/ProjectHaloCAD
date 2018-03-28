@@ -6264,12 +6264,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="1.8V" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="1.8V" device=""/>
-<part name="C2" library="0.1uF X7R Ceramic Capacitor" deviceset="08055C104KAT2A" device="" value="0.1uF"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="U9" library="thanics_robotics" deviceset="FXMAR2102" device=""/>
-<part name="C3" library="0.1uF X7R Ceramic Capacitor" deviceset="08055C104KAT2A" device="" value="0.1uF"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="1.8V" device=""/>
 <part name="U11" library="esp8266modules" deviceset="ESP12E" device="SMD"/>
@@ -6472,6 +6470,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R10" library="10k-resistor(0603)" deviceset="RC0603JR-0710KL" device="RC0603N-M" value="10k"/>
 <part name="R29" library="10k-resistor(0603)" deviceset="RC0603JR-0710KL" device="RC0603N-M" value="10k"/>
 <part name="R14" library="10k-resistor(0603)" deviceset="RC0603JR-0710KL" device="RC0603N-M" value="10k"/>
+<part name="C7" library="0.1uF-capacitor-0402" deviceset="0402ZD104KAT2A" device="0402-M" value="0.1uF"/>
+<part name="C2" library="0.1uF-capacitor-0402" deviceset="0402ZD104KAT2A" device="0402-M" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -6527,12 +6527,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND30" gate="1" x="60.96" y="124.46"/>
 <instance part="SUPPLY1" gate="G$1" x="-43.18" y="-93.98"/>
 <instance part="SUPPLY2" gate="G$1" x="40.64" y="-93.98"/>
-<instance part="C2" gate="A" x="-198.12" y="-121.92"/>
 <instance part="GND7" gate="1" x="-205.74" y="-142.24"/>
 <instance part="GND9" gate="1" x="-256.54" y="-121.92" rot="R270"/>
 <instance part="+3V7" gate="G$1" x="-241.3" y="-114.3"/>
 <instance part="U9" gate="G$1" x="-228.6" y="-134.62"/>
-<instance part="C3" gate="A" x="-251.46" y="-121.92"/>
 <instance part="GND10" gate="1" x="-185.42" y="-121.92" rot="R90"/>
 <instance part="SUPPLY4" gate="G$1" x="-203.2" y="-116.84"/>
 <instance part="U11" gate="G$1" x="-213.36" y="152.4"/>
@@ -6736,6 +6734,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R10" gate="A" x="50.8" y="17.78" rot="R90"/>
 <instance part="R29" gate="A" x="393.7" y="15.24"/>
 <instance part="R14" gate="A" x="167.64" y="165.1"/>
+<instance part="C7" gate="A" x="-251.46" y="-121.92"/>
+<instance part="C2" gate="A" x="-198.12" y="-121.92"/>
 </instances>
 <busses>
 </busses>
@@ -7086,13 +7086,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
-<pinref part="C3" gate="A" pin="1"/>
 <wire x1="-254" y1="-121.92" x2="-251.46" y2="-121.92" width="0.1524" layer="91"/>
+<pinref part="C7" gate="A" pin="1"/>
 </segment>
 <segment>
-<pinref part="C2" gate="A" pin="2"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="-190.5" y1="-121.92" x2="-187.96" y2="-121.92" width="0.1524" layer="91"/>
+<pinref part="C2" gate="A" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND42" gate="1" pin="GND"/>
@@ -7808,9 +7808,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-236.22" y1="-137.16" x2="-238.76" y2="-137.16" width="0.1524" layer="91"/>
 <wire x1="-238.76" y1="-137.16" x2="-238.76" y2="-129.54" width="0.1524" layer="91"/>
 <junction x="-238.76" y="-129.54"/>
-<pinref part="C3" gate="A" pin="2"/>
 <wire x1="-243.84" y1="-121.92" x2="-241.3" y2="-121.92" width="0.1524" layer="91"/>
 <junction x="-241.3" y="-121.92"/>
+<pinref part="C7" gate="A" pin="2"/>
 </segment>
 <segment>
 <pinref part="U11" gate="G$1" pin="VCC"/>
@@ -8521,11 +8521,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U9" gate="G$1" pin="VCCB"/>
 <wire x1="-208.28" y1="-129.54" x2="-203.2" y2="-129.54" width="0.1524" layer="91"/>
 <wire x1="-203.2" y1="-129.54" x2="-203.2" y2="-121.92" width="0.1524" layer="91"/>
-<pinref part="C2" gate="A" pin="1"/>
 <wire x1="-203.2" y1="-121.92" x2="-203.2" y2="-116.84" width="0.1524" layer="91"/>
 <wire x1="-203.2" y1="-121.92" x2="-198.12" y2="-121.92" width="0.1524" layer="91"/>
 <junction x="-203.2" y="-121.92"/>
 <pinref part="SUPPLY4" gate="G$1" pin="1.8V"/>
+<pinref part="C2" gate="A" pin="1"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="VDDIO"/>
