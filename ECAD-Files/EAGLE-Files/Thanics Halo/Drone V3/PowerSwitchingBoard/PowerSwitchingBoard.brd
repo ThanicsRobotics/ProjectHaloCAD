@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -257,6 +257,9 @@ Gimbal -&gt;</text>
 <text x="61.595" y="81.28" size="2.54" layer="22" ratio="15" rot="MR0">To Batt -&gt;</text>
 <text x="61.722" y="86.487" size="1.27" layer="21" ratio="15" rot="R180">*Made on Earth by humans* </text>
 <text x="41.402" y="24.765" size="3.81" layer="21" ratio="15" rot="R90">Power Switching Board v1</text>
+<dimension x1="9.271" y1="-0.508" x2="70.612" y2="-0.127" x3="39.9415" y3="-3.556" textsize="1.778" layer="1" dtype="horizontal"/>
+<dimension x1="9.398" y1="-0.508" x2="40.132" y2="-0.381" x3="24.765" y3="-6.858" textsize="1.778" layer="1" dtype="horizontal"/>
+<dimension x1="30.226" y1="3.683" x2="40.132" y2="-0.381" x3="35.179" y3="-11.049" textsize="1.778" layer="1" dtype="horizontal"/>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi">

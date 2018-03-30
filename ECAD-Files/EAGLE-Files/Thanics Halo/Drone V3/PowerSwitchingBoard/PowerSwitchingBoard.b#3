@@ -256,6 +256,7 @@
 Gimbal -&gt;</text>
 <text x="61.595" y="81.28" size="2.54" layer="22" ratio="15" rot="MR0">To Batt -&gt;</text>
 <text x="61.722" y="86.487" size="1.27" layer="21" ratio="15" rot="R180">*Made on Earth by humans* </text>
+<text x="41.402" y="24.765" size="3.81" layer="21" ratio="15" rot="R90">Power Switching Board v1</text>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi">
