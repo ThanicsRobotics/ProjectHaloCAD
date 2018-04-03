@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -108,10 +108,7 @@
 <wire x1="10.1346" y1="-1.4224" x2="10.1346" y2="0.9652" width="0.1524" layer="51"/>
 <wire x1="10.1346" y1="0.9652" x2="-9.3726" y2="0.9652" width="0.1524" layer="51"/>
 <wire x1="-9.3726" y1="0.9652" x2="-9.3726" y2="-1.4224" width="0.1524" layer="51"/>
-<wire x1="8.001" y1="-3.3274" x2="7.239" y2="-3.3274" width="0.508" layer="51" curve="-180"/>
-<wire x1="7.239" y1="-3.3274" x2="8.001" y2="-3.3274" width="0.508" layer="51" curve="-180"/>
-<wire x1="11.2776" y1="-1.4224" x2="10.5156" y2="-1.4224" width="0.508" layer="22" curve="-180"/>
-<wire x1="10.5156" y1="-1.4224" x2="11.2776" y2="-1.4224" width="0.508" layer="22" curve="-180"/>
+<text x="-10.16" y="-1.27" size="1.27" layer="21" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>

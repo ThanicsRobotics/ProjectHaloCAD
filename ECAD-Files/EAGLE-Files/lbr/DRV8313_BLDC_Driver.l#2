@@ -790,8 +790,8 @@
 </packages>
 <symbols>
 <symbol name="DRV8313PWP">
-<pin name="CP1" x="2.54" y="0" length="middle"/>
-<pin name="CP2" x="2.54" y="-2.54" length="middle"/>
+<pin name="CPL" x="2.54" y="0" length="middle"/>
+<pin name="CPH" x="2.54" y="-2.54" length="middle"/>
 <pin name="VCP" x="2.54" y="-5.08" length="middle"/>
 <pin name="VM_2" x="2.54" y="-7.62" length="middle" direction="pwr"/>
 <pin name="OUT1" x="2.54" y="-10.16" length="middle" direction="out"/>
@@ -841,8 +841,8 @@
 <connect gate="A" pin="!SLEEP" pad="17"/>
 <connect gate="A" pin="COMPN" pad="13"/>
 <connect gate="A" pin="COMPP" pad="12"/>
-<connect gate="A" pin="CP1" pad="1"/>
-<connect gate="A" pin="CP2" pad="2"/>
+<connect gate="A" pin="CPH" pad="2"/>
+<connect gate="A" pin="CPL" pad="1"/>
 <connect gate="A" pin="EN1" pad="26"/>
 <connect gate="A" pin="EN2" pad="24"/>
 <connect gate="A" pin="EN3" pad="22"/>
@@ -880,8 +880,8 @@
 <connect gate="A" pin="!SLEEP" pad="17"/>
 <connect gate="A" pin="COMPN" pad="13"/>
 <connect gate="A" pin="COMPP" pad="12"/>
-<connect gate="A" pin="CP1" pad="1"/>
-<connect gate="A" pin="CP2" pad="2"/>
+<connect gate="A" pin="CPH" pad="2"/>
+<connect gate="A" pin="CPL" pad="1"/>
 <connect gate="A" pin="EN1" pad="26"/>
 <connect gate="A" pin="EN2" pad="24"/>
 <connect gate="A" pin="EN3" pad="22"/>
@@ -919,8 +919,8 @@
 <connect gate="A" pin="!SLEEP" pad="17"/>
 <connect gate="A" pin="COMPN" pad="13"/>
 <connect gate="A" pin="COMPP" pad="12"/>
-<connect gate="A" pin="CP1" pad="1"/>
-<connect gate="A" pin="CP2" pad="2"/>
+<connect gate="A" pin="CPH" pad="2"/>
+<connect gate="A" pin="CPL" pad="1"/>
 <connect gate="A" pin="EN1" pad="26"/>
 <connect gate="A" pin="EN2" pad="24"/>
 <connect gate="A" pin="EN3" pad="22"/>

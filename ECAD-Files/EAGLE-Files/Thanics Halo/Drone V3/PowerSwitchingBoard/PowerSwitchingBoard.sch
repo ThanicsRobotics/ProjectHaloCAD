@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9,6 +9,8 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -409,6 +411,7 @@ Allows current flow when high potential at base.</description>
 <wire x1="-6.35" y1="-3.81" x2="-8.89" y2="-1.27" width="0.5" layer="21"/>
 <wire x1="-8.89" y1="-1.27" x2="-8.89" y2="1.27" width="0.5" layer="21"/>
 <wire x1="-8.89" y1="1.27" x2="-6.35" y2="3.81" width="0.5" layer="21"/>
+<text x="-6.35" y="5.08" size="1.27" layer="21">&gt;NAME</text>
 </package>
 <package name="3-SMD">
 <smd name="3" x="-1.2" y="0" dx="2" dy="0.4" layer="1" rot="R90"/>
@@ -980,6 +983,7 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="-1.5494" y1="-0.8128" x2="1.5494" y2="-0.8128" width="0.1524" layer="21"/>
 <wire x1="1.5494" y1="0.8128" x2="-1.5494" y2="0.8128" width="0.1524" layer="21"/>
 <text x="-3.429" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-1.524" y="1.016" size="0.762" layer="21">&gt;NAME</text>
 </package>
 <package name="SOD123-L">
 <smd name="1" x="-1.6742" y="0" dx="0.8064" dy="0.55" layer="1"/>
@@ -1108,11 +1112,11 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="0.8128" y1="-0.4064" x2="0.8128" y2="0.4064" width="0.1524" layer="51"/>
 <wire x1="0.8128" y1="0.4064" x2="-0.4064" y2="0.4064" width="0.1524" layer="51"/>
 <wire x1="-0.8128" y1="0.4064" x2="-0.8128" y2="-0.4064" width="0.1524" layer="51"/>
-<text x="-1.4986" y="0.762" size="0.762" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <wire x1="-1.524" y1="0.635" x2="-1.524" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="-1.524" y1="-0.635" x2="1.524" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="1.524" y1="-0.635" x2="1.524" y2="0.635" width="0.127" layer="21"/>
 <wire x1="1.524" y1="0.635" x2="-1.524" y2="0.635" width="0.127" layer="21"/>
+<text x="-1.524" y="0.762" size="0.762" layer="21">&gt;NAME</text>
 </package>
 <package name="RC0603N-L">
 <smd name="1" x="-0.6731" y="0" dx="0.5588" dy="0.8128" layer="1"/>
@@ -2936,11 +2940,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.8128" y1="-0.4064" x2="0.8128" y2="0.4064" width="0.1524" layer="51"/>
 <wire x1="0.8128" y1="0.4064" x2="-0.4064" y2="0.4064" width="0.1524" layer="51"/>
 <wire x1="-0.8128" y1="0.4064" x2="-0.8128" y2="-0.4064" width="0.1524" layer="51"/>
-<text x="-1.4986" y="0.762" size="0.762" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <wire x1="-1.524" y1="0.635" x2="-1.524" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="-1.524" y1="-0.635" x2="1.524" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="1.524" y1="-0.635" x2="1.524" y2="0.635" width="0.127" layer="21"/>
 <wire x1="1.524" y1="0.635" x2="-1.524" y2="0.635" width="0.127" layer="21"/>
+<text x="-1.524" y="0.762" size="0.762" layer="21">&gt;NAME</text>
 </package>
 <package name="RC0603N-L">
 <smd name="1" x="-0.6731" y="0" dx="0.5588" dy="0.8128" layer="1"/>
@@ -3056,11 +3060,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.8128" y1="-0.4064" x2="0.8128" y2="0.4064" width="0.1524" layer="51"/>
 <wire x1="0.8128" y1="0.4064" x2="-0.4064" y2="0.4064" width="0.1524" layer="51"/>
 <wire x1="-0.8128" y1="0.4064" x2="-0.8128" y2="-0.4064" width="0.1524" layer="51"/>
-<text x="-1.6256" y="0.762" size="0.762" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <wire x1="-1.524" y1="0.635" x2="-1.524" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="-1.524" y1="-0.635" x2="1.524" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="1.524" y1="-0.635" x2="1.524" y2="0.635" width="0.127" layer="21"/>
 <wire x1="1.524" y1="0.635" x2="-1.524" y2="0.635" width="0.127" layer="21"/>
+<text x="-1.524" y="0.762" size="0.762" layer="21">&gt;NAME</text>
 </package>
 <package name="RC0603N-L">
 <smd name="1" x="-0.6731" y="0" dx="0.5588" dy="0.8128" layer="1"/>
@@ -3176,11 +3180,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.8128" y1="-0.4064" x2="0.8128" y2="0.4064" width="0.1524" layer="51"/>
 <wire x1="0.8128" y1="0.4064" x2="-0.4064" y2="0.4064" width="0.1524" layer="51"/>
 <wire x1="-0.8128" y1="0.4064" x2="-0.8128" y2="-0.4064" width="0.1524" layer="51"/>
-<text x="-1.3716" y="0.762" size="0.762" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <wire x1="-1.524" y1="0.635" x2="-1.524" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="-1.524" y1="-0.635" x2="1.524" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="1.524" y1="-0.635" x2="1.524" y2="0.635" width="0.127" layer="21"/>
 <wire x1="1.524" y1="0.635" x2="-1.524" y2="0.635" width="0.127" layer="21"/>
+<text x="-1.524" y="0.762" size="0.762" layer="21">&gt;NAME</text>
 </package>
 <package name="RC0603N-L">
 <smd name="1" x="-0.6731" y="0" dx="0.5588" dy="0.8128" layer="1"/>
@@ -3296,11 +3300,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.8128" y1="-0.4064" x2="0.8128" y2="0.4064" width="0.1524" layer="51"/>
 <wire x1="0.8128" y1="0.4064" x2="-0.4064" y2="0.4064" width="0.1524" layer="51"/>
 <wire x1="-0.8128" y1="0.4064" x2="-0.8128" y2="-0.4064" width="0.1524" layer="51"/>
-<text x="-1.6256" y="0.762" size="0.762" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <wire x1="-1.524" y1="0.635" x2="-1.524" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="-1.524" y1="-0.635" x2="1.524" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="1.524" y1="-0.635" x2="1.524" y2="0.635" width="0.127" layer="21"/>
 <wire x1="1.524" y1="0.635" x2="-1.524" y2="0.635" width="0.127" layer="21"/>
+<text x="-1.524" y="0.762" size="0.762" layer="21">&gt;NAME</text>
 </package>
 <package name="RC0603N-L">
 <smd name="1" x="-0.6731" y="0" dx="0.5588" dy="0.8128" layer="1"/>
@@ -4191,6 +4195,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="1.45" y="-2.49"/>
 <vertex x="1.45" y="-1.395"/>
 </polygon>
+<text x="-2.286" y="5.334" size="1.27" layer="21">&gt;NAME</text>
 </package>
 <package name="PWP28_5P18X3P1-L">
 <smd name="1" x="-2.7686" y="4.225075" dx="1.3716" dy="0.3048" layer="1"/>
@@ -6210,10 +6215,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="10.1346" y1="-1.4224" x2="10.1346" y2="0.9652" width="0.1524" layer="51"/>
 <wire x1="10.1346" y1="0.9652" x2="-9.3726" y2="0.9652" width="0.1524" layer="51"/>
 <wire x1="-9.3726" y1="0.9652" x2="-9.3726" y2="-1.4224" width="0.1524" layer="51"/>
-<wire x1="8.001" y1="-3.3274" x2="7.239" y2="-3.3274" width="0.508" layer="51" curve="-180"/>
-<wire x1="7.239" y1="-3.3274" x2="8.001" y2="-3.3274" width="0.508" layer="51" curve="-180"/>
-<wire x1="11.2776" y1="-1.4224" x2="10.5156" y2="-1.4224" width="0.508" layer="22" curve="-180"/>
-<wire x1="10.5156" y1="-1.4224" x2="11.2776" y2="-1.4224" width="0.508" layer="22" curve="-180"/>
+<text x="-10.16" y="-1.27" size="1.27" layer="21" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -6740,6 +6742,7 @@ Source: avr.lbr</description>
 <wire x1="3.6" y1="4" x2="3.6" y2="4.4" width="0.5" layer="21"/>
 <wire x1="3.6" y1="4.4" x2="-3.6" y2="4.4" width="0.5" layer="21"/>
 <wire x1="-3.6" y1="4.4" x2="-3.6" y2="4" width="0.5" layer="21"/>
+<text x="-3.81" y="5.08" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -9114,6 +9117,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-403.86" y1="55.88" x2="-406.4" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-406.4" y1="55.88" x2="-406.4" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-406.4" y="53.34"/>
+<pinref part="J3" gate="A" pin="2727"/>
+<wire x1="-403.86" y1="58.42" x2="-406.4" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-406.4" y1="58.42" x2="-406.4" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-406.4" y="55.88"/>
 </segment>
 <segment>
 <pinref part="GND" gate="G$1" pin="TP"/>
@@ -11454,13 +11461,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="U6" gate="A" pin="!FAULT"/>
 <wire x1="-238.76" y1="154.94" x2="-220.98" y2="154.94" width="0.1524" layer="91"/>
 <label x="-231.14" y="154.94" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="FAULT" class="0">
-<segment>
-<pinref part="J3" gate="A" pin="2727"/>
-<wire x1="-403.86" y1="58.42" x2="-421.64" y2="58.42" width="0.1524" layer="91"/>
-<label x="-419.1" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LIPO" class="0">

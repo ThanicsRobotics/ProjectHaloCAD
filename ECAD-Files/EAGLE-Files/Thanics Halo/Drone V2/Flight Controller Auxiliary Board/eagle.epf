@@ -1,5 +1,5 @@
 [Eagle]
-Version="08 04 01"
+Version="08 07 00"
 Platform="Windows"
 Globals="Globals"
 Desktop="Desktop"
@@ -446,10 +446,8 @@ UsedLibrary="C:/EAGLE-7.7.0/lbr/zilog.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 0 2559 1376"
-State=1
 Number=0
 
 [Desktop]
-Screen="6400 1440"
+Screen="8320 1561"
 Window="Win_1"

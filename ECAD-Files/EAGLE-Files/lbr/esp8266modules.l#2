@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -549,7 +549,6 @@
 <smd name="VCC" x="-8.3" y="-8.2" dx="2.5" dy="1.2" layer="1"/>
 <smd name="TXD0" x="8.1" y="5.8" dx="2.5" dy="1.2" layer="1"/>
 <smd name="RXD0" x="8.1" y="3.8" dx="2.5" dy="1.2" layer="1"/>
-<smd name="GPIO4" x="8.1" y="-0.2" dx="2.5" dy="1.2" layer="1"/>
 <smd name="GPIO5" x="8.1" y="1.8" dx="2.5" dy="1.2" layer="1"/>
 <smd name="GPIO0" x="8.1" y="-2.2" dx="2.5" dy="1.2" layer="1"/>
 <smd name="GPIO2" x="8.1" y="-4.2" dx="2.5" dy="1.2" layer="1"/>
@@ -575,6 +574,7 @@
 <vertex x="8" y="6.8"/>
 <vertex x="-8.2" y="6.8"/>
 </polygon>
+<text x="-8.89" y="7.62" size="1.27" layer="21" rot="R90">&gt;NAME</text>
 </package>
 <package name="ESP07-14PIN">
 <description>ESP8266 Module ESP-07 - 14 pins</description>
@@ -1369,7 +1369,6 @@ SWITCH</text>
 <pin name="GPIO15" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
 <pin name="GPIO2" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="GPIO0" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="GPIO4" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
 <pin name="GPIO5" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="RX" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="TX" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
@@ -1936,7 +1935,6 @@ ESP8266 module</description>
 <connect gate="G$1" pin="GPIO15" pad="GPIO15"/>
 <connect gate="G$1" pin="GPIO16" pad="GPIO16"/>
 <connect gate="G$1" pin="GPIO2" pad="GPIO2"/>
-<connect gate="G$1" pin="GPIO4" pad="GPIO4"/>
 <connect gate="G$1" pin="GPIO5" pad="GPIO5"/>
 <connect gate="G$1" pin="MISO" pad="MISO"/>
 <connect gate="G$1" pin="MOSI" pad="MOSI"/>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12384,6 +12384,7 @@ Extended soldering pads.
 <smd name="P$1" x="0" y="1.375" dx="2.2" dy="1" layer="1" cream="no"/>
 <smd name="P$2" x="0" y="-1.375" dx="2.2" dy="1" layer="1" cream="no"/>
 <smd name="P$3" x="1.525" y="0" dx="1.05" dy="1" layer="1" cream="no"/>
+<text x="-1.778" y="-1.778" size="1.27" layer="21" rot="R90">&gt;NAME</text>
 </package>
 <package name="USB-A-H">
 <description>&lt;h3&gt;USB Type 'A' Male Connector - PTH&lt;/h3&gt;

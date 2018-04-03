@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -17336,7 +17336,7 @@ Holes are offset 0.005" to hold pins in place during soldering.
 <wire x1="-3.175" y1="1.715" x2="-3.175" y2="-1.715" width="0.127" layer="51"/>
 <wire x1="-3.175" y1="-1.715" x2="3.175" y2="-1.715" width="0.127" layer="51"/>
 <wire x1="3.175" y1="-1.715" x2="3.175" y2="1.715" width="0.127" layer="51"/>
-<text x="-2.8448" y="1.9304" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-5.1308" y="2.6924" size="1.016" layer="25" font="vector">&gt;NAME</text>
 <wire x1="-6.5" y1="2.54" x2="6.5" y2="2.54" width="0.127" layer="21"/>
 <wire x1="6.5" y1="2.54" x2="6.5" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="6.5" y1="-2.54" x2="-6.5" y2="-2.54" width="0.127" layer="21"/>
