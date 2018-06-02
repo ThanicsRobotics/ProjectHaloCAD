@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -96,6 +97,10 @@
 <wire x1="-0.508" y1="0.254" x2="-0.508" y2="-0.254" width="0.1524" layer="51"/>
 <wire x1="-0.3048" y1="0" x2="-0.4572" y2="0" width="0" layer="51" curve="-180"/>
 <wire x1="-0.4572" y1="0" x2="-0.3048" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="-1.016" y1="0.508" x2="-1.016" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="-0.508" x2="1.016" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="1.016" y1="-0.508" x2="1.016" y2="0.508" width="0.127" layer="21"/>
+<wire x1="1.016" y1="0.508" x2="-1.016" y2="0.508" width="0.127" layer="21"/>
 </package>
 <package name="G-155-L">
 <smd name="1" x="-0.4191" y="0" dx="0.3556" dy="0.508" layer="1"/>
@@ -145,7 +150,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GRM155R60J102KA01D" prefix="C">
+<deviceset name="GRM155R60J102KA01D" prefix="C" uservalue="yes">
 <gates>
 <gate name="A" symbol="CAPH" x="0" y="0" swaplevel="1"/>
 </gates>
