@@ -10614,13 +10614,6 @@ Charging</text>
 <pinref part="R33" gate="A" pin="11"/>
 </segment>
 </net>
-<net name="MIC_OUTPUT" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="AIN5"/>
-<wire x1="-15.24" y1="-27.94" x2="5.08" y2="-27.94" width="0.1524" layer="91"/>
-<label x="-12.7" y="-27.94" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="GPIO36" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="GPIO36"/>

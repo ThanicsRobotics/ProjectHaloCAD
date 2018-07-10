@@ -637,7 +637,7 @@ design rules under a new name.</description>
 </element>
 <element name="L1" library="1.8k-fb" package="IND_1005-M" value="MMZ1005S182ET000IND_1005-M" x="9.144" y="10.033" smashed="yes" rot="MR90">
 <attribute name="MANUFACTURER_PART_NUMBER" value="MMZ1005S182ET000" x="9.144" y="10.033" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="11.303" y="10.16" size="0.762" layer="22" ratio="10" rot="MR90"/>
+<attribute name="NAME" x="7.747" y="9.779" size="0.762" layer="22" ratio="10" rot="MR90"/>
 <attribute name="VENDOR" value="TDK" x="9.144" y="10.033" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="J11" library="thanics_robotics" package="JST_SH_4POS" value="" x="9.348" y="12.008" smashed="yes" rot="MR0">
@@ -656,12 +656,12 @@ design rules under a new name.</description>
 </element>
 <element name="C8" library="0.1uF-capacitor-0402" package="0402-M" value="0.1uF" x="10.541" y="9.525" smashed="yes" rot="MR270">
 <attribute name="MANUFACTURER_PART_NUMBER" value="0402ZD104KAT2A" x="10.541" y="9.525" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="8.509" y="10.668" size="0.762" layer="22" rot="MR270"/>
+<attribute name="NAME" x="12.065" y="11.176" size="0.762" layer="22" rot="MR270"/>
 <attribute name="VENDOR" value="AVX Corporation" x="10.541" y="9.525" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="L2" library="1.8k-fb" package="IND_1005-M" value="MMZ1005S182ET000IND_1005-M" x="21.082" y="12.827" smashed="yes" rot="MR0">
 <attribute name="MANUFACTURER_PART_NUMBER" value="MMZ1005S182ET000" x="21.082" y="17.327" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="23.749" y="14.986" size="0.762" layer="22" ratio="10" rot="MR0"/>
+<attribute name="NAME" x="21.59" y="13.589" size="0.762" layer="22" ratio="10" rot="MR90"/>
 <attribute name="VENDOR" value="TDK" x="21.082" y="17.327" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C9" library="thanics_robotics" package="0603_CAPACITOR" value="1uF" x="22.86" y="11.938" smashed="yes" rot="MR270">

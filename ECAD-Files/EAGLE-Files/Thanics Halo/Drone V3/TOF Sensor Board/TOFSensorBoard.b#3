@@ -716,8 +716,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="7.493" y="8.255" size="0.762" layer="22" ratio="10" rot="MR90"/>
 <attribute name="VENDOR" value="TDK" x="-6.642" y="5.636" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="L6" library="1.8k-fb" package="IND_1005-M" value="MMZ1005S182ET000IND_1005-M" x="9.271" y="11.938" rot="R180">
+<element name="L6" library="1.8k-fb" package="IND_1005-M" value="MMZ1005S182ET000IND_1005-M" x="9.271" y="11.938" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER_PART_NUMBER" value="MMZ1005S182ET000" x="9.271" y="11.938" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="11.176" y="11.43" size="0.762" layer="21" ratio="10" rot="R90"/>
 <attribute name="VENDOR" value="TDK" x="9.271" y="11.938" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 </elements>

@@ -561,7 +561,9 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="thanics_robotics" package="28-VQFN" value="OPT3101" x="14.478" y="8.477" rot="MR135"/>
+<element name="U1" library="thanics_robotics" package="28-VQFN" value="OPT3101" x="14.478" y="8.477" smashed="yes" rot="MR135">
+<attribute name="NAME" x="16.1532875" y="4.7204" size="1.016" layer="22" rot="MR315"/>
+</element>
 <element name="D2" library="thanics_robotics" package="5MM_LED" value="SFH203FA" x="20.19" y="6.15" smashed="yes">
 <attribute name="NAME" x="23.619" y="0.943" size="1.27" layer="21"/>
 </element>

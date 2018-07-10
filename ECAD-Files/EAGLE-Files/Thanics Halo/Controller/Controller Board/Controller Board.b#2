@@ -161,24 +161,6 @@
 <board>
 <fusionsync huburn="a.cGVyc29uYWw6dWUyODQ3M2Rj" projecturn="a.cGVyc29uYWw6dWUyODQ3M2RjIzIwMTYxMDI3NDg3NTA0MzE" f3durn="urn:adsk.wipprod:dm.lineage:5KQkq9RWTLm-kIQrxSpE6Q" pcbguid="bc19f864-05d9-4aec-a618-e6cf3a672aba" lastpulledtime="" lastsyncedchangeguid="089ca46e-e1a6-c8ee-ba5e-6f4dacde3c00"/>
 <plain>
-<wire x1="4.2164" y1="0.1778" x2="4.3026" y2="0.1778" width="0" layer="20"/>
-<wire x1="4.3026" y1="0.1778" x2="94.5642" y2="0.1524" width="0" layer="20"/>
-<wire x1="94.5642" y1="0.1524" x2="94.5896" y2="13.3604" width="0" layer="20"/>
-<wire x1="94.5896" y1="13.3604" x2="97.4344" y2="13.3604" width="0" layer="20"/>
-<wire x1="97.4344" y1="13.3604" x2="97.4344" y2="28.7784" width="0" layer="20"/>
-<wire x1="97.4344" y1="28.7784" x2="94.6404" y2="28.7784" width="0" layer="20"/>
-<wire x1="94.6404" y1="28.7784" x2="94.6404" y2="50.7748" width="0" layer="20"/>
-<wire x1="94.6404" y1="50.7748" x2="50.7492" y2="50.7746" width="0" layer="20"/>
-<wire x1="50.7492" y1="50.7746" x2="50.7492" y2="57.4548" width="0" layer="20"/>
-<wire x1="50.7492" y1="57.4548" x2="19.812" y2="57.4548" width="0" layer="20"/>
-<wire x1="19.812" y1="57.4548" x2="19.812" y2="50.8002" width="0" layer="20"/>
-<wire x1="19.812" y1="50.8002" x2="4.328" y2="50.8002" width="0" layer="20"/>
-<wire x1="4.328" y1="50.8002" x2="4.318" y2="30.0228" width="0" layer="20"/>
-<wire x1="4.318" y1="30.0228" x2="4.318" y2="29.1592" width="0" layer="20"/>
-<wire x1="4.318" y1="29.1592" x2="1.8796" y2="29.1592" width="0" layer="20"/>
-<wire x1="1.8796" y1="29.1592" x2="1.8796" y2="13.9954" width="0" layer="20"/>
-<wire x1="1.8796" y1="13.9954" x2="4.2164" y2="13.9954" width="0" layer="20"/>
-<wire x1="4.2164" y1="13.9954" x2="4.2164" y2="0.1778" width="0" layer="20"/>
 <hole x="92.3544" y="2.6162" drill="2.54"/>
 <hole x="7.2644" y="2.7686" drill="2.54"/>
 <text x="21.59" y="44.4754" size="1.778" layer="26" rot="MR180">Controller Board v4</text>
@@ -19407,6 +19389,22 @@ Maryland, USA</text>
 <text x="17.1196" y="25.1968" size="1.27" layer="21" rot="R90">Q2</text>
 <text x="12.0904" y="8.382" size="1.27" layer="21">D6</text>
 <text x="34.9504" y="17.1704" size="1.27" layer="21">Bar</text>
+<wire x1="4.1656" y1="0.0508" x2="4.1656" y2="13.9446" width="0" layer="20"/>
+<wire x1="4.1656" y1="13.9446" x2="1.8542" y2="13.9446" width="0" layer="20"/>
+<wire x1="1.8542" y1="13.9446" x2="1.8542" y2="29.21" width="0" layer="20"/>
+<wire x1="1.8542" y1="29.21" x2="4.2418" y2="29.21" width="0" layer="20"/>
+<wire x1="4.2418" y1="29.21" x2="4.2418" y2="50.8762" width="0" layer="20"/>
+<wire x1="4.2418" y1="50.8762" x2="19.7104" y2="50.8762" width="0" layer="20"/>
+<wire x1="19.7104" y1="50.8762" x2="19.7104" y2="57.8866" width="0" layer="20"/>
+<wire x1="19.7104" y1="57.8866" x2="50.9778" y2="57.8866" width="0" layer="20"/>
+<wire x1="50.9778" y1="57.8866" x2="50.9778" y2="50.927" width="0" layer="20"/>
+<wire x1="50.9778" y1="50.927" x2="94.6404" y2="50.927" width="0" layer="20"/>
+<wire x1="94.6404" y1="50.927" x2="94.6404" y2="28.7782" width="0" layer="20"/>
+<wire x1="94.6404" y1="28.7782" x2="97.3328" y2="28.7782" width="0" layer="20"/>
+<wire x1="97.3328" y1="28.7782" x2="97.3328" y2="13.3858" width="0" layer="20"/>
+<wire x1="97.3328" y1="13.3858" x2="94.6404" y2="13.3858" width="0" layer="20"/>
+<wire x1="94.6404" y1="13.3858" x2="94.6404" y2="0.0508" width="0" layer="20"/>
+<wire x1="94.6404" y1="0.0508" x2="4.1656" y2="0.0508" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="Controller Board" urn="urn:adsk.eagle:library:178037">

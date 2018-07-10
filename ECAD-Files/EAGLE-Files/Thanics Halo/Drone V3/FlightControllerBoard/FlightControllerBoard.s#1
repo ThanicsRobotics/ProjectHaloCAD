@@ -6403,6 +6403,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C67" library="10uF X5R Ceramic Capacitor" deviceset="GRM21BR60J106ME19L" device="" value="10uF"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="1.8V" device=""/>
+<part name="GND79" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6670,6 +6671,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C67" gate="A" x="-93.98" y="-96.52" rot="R90"/>
 <instance part="P+4" gate="1" x="-149.86" y="-73.66"/>
 <instance part="SUPPLY5" gate="G$1" x="-93.98" y="-76.2"/>
+<instance part="GND79" gate="1" x="111.76" y="-254"/>
 </instances>
 <busses>
 </busses>
@@ -7556,6 +7558,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-104.14" y1="-101.6" x2="-93.98" y2="-101.6" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="-101.6" x2="-93.98" y2="-96.52" width="0.1524" layer="91"/>
 <junction x="-104.14" y="-101.6"/>
+</segment>
+<segment>
+<pinref part="J7" gate="A" pin="88"/>
+<pinref part="GND79" gate="1" pin="GND"/>
+<wire x1="134.62" y1="-248.92" x2="132.08" y2="-248.92" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-248.92" x2="111.76" y2="-248.92" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="-248.92" x2="111.76" y2="-251.46" width="0.1524" layer="91"/>
+<pinref part="J7" gate="A" pin="77"/>
+<wire x1="134.62" y1="-246.38" x2="132.08" y2="-246.38" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-246.38" x2="132.08" y2="-248.92" width="0.1524" layer="91"/>
+<junction x="132.08" y="-248.92"/>
 </segment>
 </net>
 <net name="N$1" class="0">

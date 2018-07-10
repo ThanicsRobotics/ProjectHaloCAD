@@ -20751,6 +20751,19 @@ LED - BLUE</description>
 <wire x1="-20.32" y1="-17.78" x2="-20.32" y2="-13.97" width="1" layer="21"/>
 <text x="-20.32" y="19.05" size="1.27" layer="21">&gt;NAME</text>
 </package>
+<package name="ALT4532">
+<smd name="6" x="1.99" y="-1.35" dx="0.5" dy="1.2" layer="1" rot="R90"/>
+<smd name="5" x="1.99" y="0.7" dx="0.41" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="1.99" y="1.35" dx="0.41" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="-1.99" y="1.35" dx="0.5" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="-1.99" y="-0.7" dx="0.41" dy="1.2" layer="1" rot="R90"/>
+<smd name="1" x="-1.99" y="-1.35" dx="0.41" dy="1.2" layer="1" rot="R90"/>
+<wire x1="-3" y1="2" x2="-3" y2="-2" width="0.4" layer="21"/>
+<wire x1="-3" y1="-2" x2="3" y2="-2" width="0.4" layer="21"/>
+<wire x1="3" y1="-2" x2="3" y2="2" width="0.4" layer="21"/>
+<wire x1="3" y1="2" x2="-3" y2="2" width="0.4" layer="21"/>
+<text x="-3.2" y="2.4" size="1.27" layer="21">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="12k-resistor">
@@ -21531,6 +21544,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="1.524" y1="-0.635" x2="1.524" y2="0.635" width="0.127" layer="21"/>
 <wire x1="1.524" y1="0.635" x2="-1.524" y2="0.635" width="0.127" layer="21"/>
 <text x="-1.524" y="0.762" size="0.762" layer="21">&gt;NAME</text>
+</package>
+</packages>
+</library>
+<library name="49.9-resistor">
+<packages>
+<package name="RC0402N-M">
+<smd name="1" x="-0.6604" y="0" dx="0.8636" dy="0.6096" layer="1"/>
+<smd name="2" x="0.6604" y="0" dx="0.8636" dy="0.6096" layer="1"/>
+<wire x1="-0.2286" y1="-0.254" x2="-0.2286" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-0.2286" y1="0.254" x2="-0.5334" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-0.5334" y1="-0.254" x2="-0.2286" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="0.2286" y1="0.254" x2="0.2286" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="0.2286" y1="-0.254" x2="0.5334" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="0.5334" y1="0.254" x2="0.2286" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-0.2286" y1="-0.254" x2="0.2286" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="0.5334" y1="-0.254" x2="0.5334" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="0.2286" y1="0.254" x2="-0.2286" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-0.5334" y1="0.254" x2="-0.5334" y2="-0.254" width="0.1524" layer="51"/>
+<text x="-1.016" y="0.635" size="0.762" layer="21">&gt;NAME</text>
+<wire x1="-1.27" y1="0.508" x2="-1.27" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.508" x2="1.27" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-0.508" x2="1.27" y2="0.508" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0.508" x2="-1.27" y2="0.508" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -22844,6 +22880,60 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="RC0603JR0710KL" x="-9.652" y="-70.8914" size="1.778" layer="27" display="off"/>
 <attribute name="VENDOR" value="Yageo" x="-9.652" y="-70.8914" size="1.778" layer="27" display="off"/>
 </element>
+<element name="R36" library="49.9-resistor" package="RC0402N-M" value="49R9" x="0.635" y="-66.675">
+<attribute name="MANUFACTURER_PART_NUMBER" value="RC0402FR0749K9L" x="-10.033" y="-54.0766" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="Yageo" x="-10.033" y="-54.0766" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R37" library="49.9-resistor" package="RC0402N-M" value="49R9" x="-10.033" y="-69.469">
+<attribute name="MANUFACTURER_PART_NUMBER" value="RC0402FR0749K9L" x="-10.033" y="-56.7436" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="Yageo" x="-10.033" y="-56.7436" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R44" library="49.9-resistor" package="RC0402N-M" value="49R9" x="-5.8166" y="-69.469">
+<attribute name="MANUFACTURER_PART_NUMBER" value="RC0402FR0749K9L" x="-10.033" y="-59.4106" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="Yageo" x="-10.033" y="-59.4106" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R46" library="49.9-resistor" package="RC0402N-M" value="49R9" x="-1.6002" y="-69.469">
+<attribute name="MANUFACTURER_PART_NUMBER" value="RC0402FR0749K9L" x="-10.033" y="-62.0776" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="Yageo" x="-10.033" y="-62.0776" size="1.778" layer="27" display="off"/>
+</element>
+<element name="L4" library="600ohm-fb" package="IND_BLM18_0603-M" value="1k@100MHz" x="-1.9812" y="-60.6298">
+<attribute name="MANUFACTURER_PART_NUMBER" value="BLM18AG601SN1D" x="-9.9822" y="-64.9986" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="MURATA" x="-9.9822" y="-64.9986" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R47" library="49.9-resistor" package="RC0402N-M" value="49R9" x="-10.033" y="-72.136">
+<attribute name="MANUFACTURER_PART_NUMBER" value="RC0402FR0749K9L" x="-10.033" y="-68.4022" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="Yageo" x="-10.033" y="-68.4022" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R53" library="49.9-resistor" package="RC0402N-M" value="49R9" x="-5.8166" y="-72.136">
+<attribute name="MANUFACTURER_PART_NUMBER" value="RC0402FR0749K9L" x="-10.033" y="-71.0692" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="Yageo" x="-10.033" y="-71.0692" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R54" library="49.9-resistor" package="RC0402N-M" value="49R9" x="-1.6002" y="-72.136">
+<attribute name="MANUFACTURER_PART_NUMBER" value="RC0402FR0749K9L" x="-10.033" y="-73.7362" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="Yageo" x="-10.033" y="-73.7362" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R55" library="49.9-resistor" package="RC0402N-M" value="49R9" x="-10.033" y="-74.803">
+<attribute name="MANUFACTURER_PART_NUMBER" value="RC0402FR0749K9L" x="-10.033" y="-76.4032" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="Yageo" x="-10.033" y="-76.4032" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C44" library="0.1uF-capacitor-0402" package="0402-M" value="0.1uF" x="1.3462" y="-60.5028">
+<attribute name="MANUFACTURER_PART_NUMBER" value="0402ZD104KAT2A" x="-10.287" y="-79.1972" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="AVX Corporation" x="-10.287" y="-79.1972" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C45" library="0.1uF-capacitor-0402" package="0402-M" value="0.1uF" x="-10.287" y="-66.802">
+<attribute name="MANUFACTURER_PART_NUMBER" value="0402ZD104KAT2A" x="-10.287" y="-81.9912" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="AVX Corporation" x="-10.287" y="-81.9912" size="1.778" layer="27" display="off"/>
+</element>
+<element name="T1" library="thanics_robotics" package="ALT4532" value="ALT4532M" x="-8.1534" y="-56.515"/>
+<element name="T2" library="thanics_robotics" package="ALT4532" value="ALT4532M" x="-8.1534" y="-62.8142"/>
+<element name="C46" library="0.1uF-capacitor-0402" package="0402-M" value="0.1uF" x="-6.731" y="-66.802">
+<attribute name="MANUFACTURER_PART_NUMBER" value="0402ZD104KAT2A" x="-10.287" y="-97.409" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="AVX Corporation" x="-10.287" y="-97.409" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C47" library="0.1uF-capacitor-0402" package="0402-M" value="0.1uF" x="-3.175" y="-66.802">
+<attribute name="MANUFACTURER_PART_NUMBER" value="0402ZD104KAT2A" x="-10.287" y="-100.203" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="AVX Corporation" x="-10.287" y="-100.203" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="N$2">
@@ -23653,6 +23743,10 @@ design rules under a new name.</description>
 <contactref element="C43" pad="2"/>
 <contactref element="C42" pad="2"/>
 <contactref element="R34" pad="2"/>
+<contactref element="C44" pad="1"/>
+<contactref element="C45" pad="1"/>
+<contactref element="C46" pad="1"/>
+<contactref element="C47" pad="1"/>
 <wire x1="80.7466" y1="33.9471" x2="86.4108" y2="35.306" width="0" layer="19" extent="1-1"/>
 <wire x1="79.6468" y1="35.65" x2="80.7466" y2="33.9471" width="0" layer="19" extent="1-16"/>
 <wire x1="77.2468" y1="35.65" x2="79.6468" y2="35.65" width="0" layer="19" extent="16-16"/>
@@ -23879,7 +23973,11 @@ design rules under a new name.</description>
 <wire x1="-7.148" y1="-37.0282" x2="-7.148" y2="-35.7582" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.4831" y1="-50.1904" x2="-7.148" y2="-37.0282" width="0" layer="19" extent="1-1"/>
 <wire x1="-9.0805" y1="-50.3428" x2="-4.4831" y2="-50.1904" width="0" layer="19" extent="1-1"/>
-<wire x1="11.8491" y1="-49.8856" x2="-4.4831" y2="-50.1904" width="0" layer="19" extent="1-1"/>
+<wire x1="0.8382" y1="-60.5028" x2="-4.4831" y2="-50.1904" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.683" y1="-66.802" x2="0.8382" y2="-60.5028" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.239" y1="-66.802" x2="-3.683" y2="-66.802" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.795" y1="-66.802" x2="-7.239" y2="-66.802" width="0" layer="19" extent="1-1"/>
+<wire x1="11.8491" y1="-49.8856" x2="0.8382" y2="-60.5028" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="U2" pad="6"/>
@@ -26771,7 +26869,21 @@ design rules under a new name.</description>
 <wire x1="50.37404375" y1="10.7188" x2="54.1528" y2="10.7188" width="0.254" layer="1"/>
 <wire x1="49.828490625" y1="10.173246875" x2="50.37404375" y2="10.7188" width="0.254" layer="1"/>
 <contactref element="R22" pad="2"/>
-<wire x1="6.8707" y1="-49.8856" x2="41.3308" y2="4.7108" width="0" layer="19" extent="1-1"/>
+<contactref element="R46" pad="1"/>
+<contactref element="R36" pad="1"/>
+<contactref element="R37" pad="1"/>
+<contactref element="R44" pad="1"/>
+<contactref element="T1" pad="3"/>
+<contactref element="T2" pad="3"/>
+<contactref element="C47" pad="2"/>
+<wire x1="-6.477" y1="-69.469" x2="-10.6934" y2="-69.469" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.2606" y1="-69.469" x2="-6.477" y2="-69.469" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.667" y1="-66.802" x2="-2.2606" y2="-69.469" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.0254" y1="-66.675" x2="-2.667" y2="-66.802" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.1434" y1="-61.4642" x2="-10.6934" y2="-69.469" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.1434" y1="-55.165" x2="-10.1434" y2="-61.4642" width="0" layer="19" extent="1-1"/>
+<wire x1="6.8707" y1="-49.8856" x2="-10.1434" y2="-55.165" width="0" layer="19" extent="1-1"/>
+<wire x1="41.3308" y1="4.7108" x2="6.8707" y2="-49.8856" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$60">
 <contactref element="U5" pad="50"/>
@@ -26816,6 +26928,10 @@ design rules under a new name.</description>
 <wire x1="86.3092" y1="21.2852" x2="85.63646875" y2="21.2852" width="0.1524" layer="1"/>
 <wire x1="87.558" y1="21.482" x2="86.506" y2="21.482" width="0.1524" layer="1"/>
 <wire x1="86.506" y1="21.482" x2="86.3092" y2="21.2852" width="0.1524" layer="1"/>
+<contactref element="R46" pad="2"/>
+<contactref element="T1" pad="5"/>
+<wire x1="-6.1634" y1="-55.815" x2="78.8266" y2="14.3492" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.9398" y1="-69.469" x2="-6.1634" y2="-55.815" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RX_P">
 <contactref element="U5" pad="52"/>
@@ -26830,6 +26946,10 @@ design rules under a new name.</description>
 <wire x1="86.3092" y1="20.9804" x2="86.614" y2="20.6756" width="0.1524" layer="1"/>
 <wire x1="86.614" y1="20.6756" x2="87.5516" y2="20.6756" width="0.1524" layer="1"/>
 <wire x1="87.5516" y1="20.6756" x2="87.558" y2="20.682" width="0.1524" layer="1"/>
+<contactref element="R44" pad="2"/>
+<contactref element="T1" pad="4"/>
+<wire x1="-6.1634" y1="-55.165" x2="78.8266" y2="13.8492" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.1562" y1="-69.469" x2="-6.1634" y2="-55.165" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TX_N">
 <contactref element="U5" pad="56"/>
@@ -26843,6 +26963,10 @@ design rules under a new name.</description>
 <wire x1="85.83966875" y1="23.6728" x2="86.3092" y2="23.6728" width="0.1524" layer="1"/>
 <wire x1="86.3092" y1="23.6728" x2="86.5184" y2="23.882" width="0.1524" layer="1"/>
 <wire x1="86.5184" y1="23.882" x2="87.558" y2="23.882" width="0.1524" layer="1"/>
+<contactref element="R36" pad="2"/>
+<contactref element="T2" pad="4"/>
+<wire x1="1.2954" y1="-66.675" x2="78.8266" y2="15.8492" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.1634" y1="-61.4642" x2="1.2954" y2="-66.675" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TX_P">
 <contactref element="U5" pad="55"/>
@@ -26857,6 +26981,10 @@ design rules under a new name.</description>
 <wire x1="86.3092" y1="23.368" x2="86.614" y2="23.0632" width="0.1524" layer="1"/>
 <wire x1="86.614" y1="23.0632" x2="86.6328" y2="23.082" width="0.1524" layer="1"/>
 <wire x1="86.6328" y1="23.082" x2="87.558" y2="23.082" width="0.1524" layer="1"/>
+<contactref element="R37" pad="2"/>
+<contactref element="T2" pad="5"/>
+<wire x1="-6.1634" y1="-62.1142" x2="78.8266" y2="15.3492" width="0" layer="19" extent="1-1"/>
+<wire x1="-9.3726" y1="-69.469" x2="-6.1634" y2="-62.1142" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPCLK1">
 <contactref element="U6" pad="82"/>
@@ -27242,18 +27370,38 @@ design rules under a new name.</description>
 </signal>
 <signal name="RX_LAN_P">
 <contactref element="U4" pad="58"/>
+<contactref element="R53" pad="2"/>
+<contactref element="T1" pad="2"/>
+<wire x1="-10.1434" y1="-57.215" x2="-5.1562" y2="-72.136" width="0" layer="19" extent="1-1"/>
+<wire x1="19.177" y1="-43.5982" x2="-10.1434" y2="-57.215" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RX_LAN_N">
 <contactref element="U4" pad="57"/>
+<contactref element="R54" pad="2"/>
+<contactref element="T1" pad="1"/>
+<wire x1="-10.1434" y1="-57.865" x2="-0.9398" y2="-72.136" width="0" layer="19" extent="1-1"/>
+<wire x1="17.907" y1="-43.5982" x2="-10.1434" y2="-57.865" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TX_LAN_N">
 <contactref element="U4" pad="56"/>
+<contactref element="R55" pad="2"/>
+<contactref element="T2" pad="2"/>
+<wire x1="-10.1434" y1="-63.5142" x2="-9.3726" y2="-74.803" width="0" layer="19" extent="1-1"/>
+<wire x1="16.637" y1="-43.5982" x2="-10.1434" y2="-63.5142" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TX_LAN_P">
 <contactref element="U4" pad="55"/>
+<contactref element="R47" pad="2"/>
+<contactref element="T2" pad="1"/>
+<wire x1="-10.1434" y1="-64.1642" x2="-9.3726" y2="-72.136" width="0" layer="19" extent="1-1"/>
+<wire x1="15.367" y1="-43.5982" x2="-10.1434" y2="-64.1642" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ETH_BIAS">
 <contactref element="U4" pad="13"/>
+<contactref element="L4" pad="2"/>
+<contactref element="C44" pad="2"/>
+<wire x1="1.8542" y1="-60.5028" x2="-1.2573" y2="-60.6298" width="0" layer="19" extent="1-1"/>
+<wire x1="11.557" y1="-11.4182" x2="1.8542" y2="-60.5028" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND2">
 <contactref element="D5" pad="C"/>
@@ -27280,103 +27428,26 @@ design rules under a new name.</description>
 <contactref element="R34" pad="1"/>
 <wire x1="10.0965" y1="-49.8856" x2="2.7312" y2="-49.8856" width="0" layer="19" extent="1-1"/>
 </signal>
+<signal name="N$70">
+<contactref element="R53" pad="1"/>
+<contactref element="R54" pad="1"/>
+<contactref element="L4" pad="1"/>
+<contactref element="C45" pad="2"/>
+<contactref element="R55" pad="1"/>
+<contactref element="R47" pad="1"/>
+<contactref element="T1" pad="6"/>
+<contactref element="T2" pad="6"/>
+<contactref element="C46" pad="2"/>
+<wire x1="-10.6934" y1="-72.136" x2="-10.6934" y2="-74.803" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.477" y1="-72.136" x2="-10.6934" y2="-72.136" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.2606" y1="-72.136" x2="-6.477" y2="-72.136" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.223" y1="-66.802" x2="-6.477" y2="-72.136" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.1634" y1="-64.1642" x2="-6.223" y2="-66.802" width="0" layer="19" extent="1-1"/>
+<wire x1="-9.779" y1="-66.802" x2="-6.223" y2="-66.802" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.7051" y1="-60.6298" x2="-6.1634" y2="-64.1642" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.1634" y1="-57.865" x2="-2.7051" y2="-60.6298" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
-<errors>
-<approved hash="5,1,c02e9044b82a4de2"/>
-<approved hash="5,1,90471044968ab698"/>
-<approved hash="5,1,8a2703060b04b909"/>
-<approved hash="5,1,9cfe5b6f5f509b31"/>
-<approved hash="5,1,9d0a5a3b5e7f64d2"/>
-<approved hash="5,1,437ef5b0ffe276b2"/>
-<approved hash="4,1,091d846f13fefdb5"/>
-<approved hash="4,1,06b8db86dbb1538e"/>
-<approved hash="4,16,091d846f13fefdb5"/>
-<approved hash="4,16,06b8db86dbb1538e"/>
-<approved hash="5,16,f12824bccef7fc9f"/>
-<approved hash="5,16,f12824bccef7fc9f"/>
-<approved hash="5,16,911d66b58f21d88a"/>
-<approved hash="19,16,b4356fde38a70353"/>
-<approved hash="19,16,252674b4e46025f3"/>
-<approved hash="19,16,252674b4e46025f3"/>
-<approved hash="19,16,613fe4af746461f5"/>
-<approved hash="19,16,26269496dc10c940"/>
-<approved hash="19,16,6b5b172717976beb"/>
-<approved hash="19,16,26269496dc10c940"/>
-<approved hash="19,16,6b5b172717976beb"/>
-<approved hash="19,16,9faeff2d3b2c5baf"/>
-<approved hash="19,16,056952d866ae6312"/>
-<approved hash="19,16,6b51172d17a96bd5"/>
-<approved hash="19,16,6b51172d17a96bd5"/>
-<approved hash="19,16,6a78160416066a7a"/>
-<approved hash="19,16,59d205d86eb45545"/>
-<approved hash="19,16,663d686919e43648"/>
-<approved hash="19,16,6a78160416066a7a"/>
-<approved hash="19,16,6a78160416066a7a"/>
-<approved hash="19,16,6b5b172717976beb"/>
-<approved hash="19,16,dbbbc04c08ec74e0"/>
-<approved hash="5,16,f128c1fb076a6a0d"/>
-<approved hash="19,16,056952d866ae6312"/>
-<approved hash="19,16,bbe2b9bd5cc80f00"/>
-<approved hash="19,16,6b51172d17a96bd5"/>
-<approved hash="19,16,6a78160416066a7a"/>
-<approved hash="19,16,663d686919e43648"/>
-<approved hash="19,16,59d205d86eb45545"/>
-<approved hash="5,16,f128c1fb076a6a0d"/>
-<approved hash="19,16,ee216befab307226"/>
-<approved hash="5,16,cecaf31d39c947e4"/>
-<approved hash="1,20,64e1fa07fa706496"/>
-<approved hash="1,20,70f80e1e0e977071"/>
-<approved hash="1,20,7ce2020402747c92"/>
-<approved hash="5,1,c39b8ccf766b9d76"/>
-<approved hash="5,1,808d63fb23ddfeab"/>
-<approved hash="5,1,504182ea22473d0e"/>
-<approved hash="5,1,601483601adb4281"/>
-<approved hash="19,1,b4404a424a21b423"/>
-<approved hash="5,1,3d02addf2da2357c"/>
-<approved hash="19,1,4844224621d34bd1"/>
-<approved hash="5,1,3506a5df25a62d78"/>
-<approved hash="5,1,0d0a9ddf1daa3574"/>
-<approved hash="5,1,34871c569c4b0c91"/>
-<approved hash="19,1,4c41da43da284c2a"/>
-<approved hash="5,1,3c87e45ae447349e"/>
-<approved hash="5,1,3506e5dfe5a53d78"/>
-<approved hash="5,1,3d02eddfeda5357c"/>
-<approved hash="5,1,3487ec5eec433c9e"/>
-<approved hash="5,1,a31aa5da86cc2811"/>
-<approved hash="5,1,fa9ba458d7835791"/>
-<approved hash="5,1,f62ce7f466bdb61b"/>
-<approved hash="5,1,65a793a7fd76b8af"/>
-<approved hash="5,1,347325a0ef815b9d"/>
-<approved hash="5,1,d06d829d54b0b94c"/>
-<approved hash="5,1,07ae823ceedc4c52"/>
-<approved hash="19,16,5cb3bfa71cae14b7"/>
-<approved hash="19,16,62523e7e925f4108"/>
-<approved hash="19,16,ea854b8b8894f710"/>
-<approved hash="19,16,a5a100a30f1425e8"/>
-<approved hash="19,1,b224723353e55dcb"/>
-<approved hash="19,1,5e246e0d71e48ff4"/>
-<approved hash="19,1,4e071a391a044e3a"/>
-<approved hash="19,1,ce381a06241ff021"/>
-<approved hash="19,1,5f974940a1da13c9"/>
-<approved hash="19,1,5acbfb92272438a3"/>
-<approved hash="19,1,dc038e6d5b18adb2"/>
-<approved hash="19,1,dc038e6d5b18adb2"/>
-<approved hash="19,1,ce381a06241ff021"/>
-<approved hash="19,1,ce561a6825f7f1c9"/>
-<approved hash="19,1,56447fd3564a2dc7"/>
-<approved hash="19,1,56447fd3564a2dc7"/>
-<approved hash="19,16,3220723156e55eca"/>
-<approved hash="19,16,5c3e6a114ee530f4"/>
-<approved hash="19,16,de98cfc0e3e6537a"/>
-<approved hash="19,16,4e3c1802181e4e20"/>
-<approved hash="19,16,4e52186c18fa4ec4"/>
-<approved hash="19,16,ce05183b183bce05"/>
-<approved hash="19,16,4e3c1802181e4e20"/>
-<approved hash="19,16,9af53b17a522b918"/>
-<approved hash="19,16,20220022001e201e"/>
-<approved hash="19,16,5c0e0eeb181aeb3b"/>
-<approved hash="19,16,56417ed65674b2fe"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
