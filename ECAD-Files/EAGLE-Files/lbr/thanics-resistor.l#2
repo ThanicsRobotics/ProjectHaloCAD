@@ -231,6 +231,80 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="RC0402FR-0739K2L" prefix="R" uservalue="yes">
+<gates>
+<gate name="A" symbol="R-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0402">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="39.2k" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RC0603FR-071K96L" prefix="R" uservalue="yes">
+<gates>
+<gate name="A" symbol="R-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0603">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="1.96k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RMCF0603JT5K10" prefix="R" uservalue="yes">
+<gates>
+<gate name="A" symbol="R-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0603">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VALUE" value="5.1k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RMCF0603JT22K0" uservalue="yes">
+<gates>
+<gate name="A" symbol="R-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0603">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VALUE" value="22k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

@@ -242,6 +242,44 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="GRM155R60J102KA01D" prefix="C" uservalue="yes">
+<gates>
+<gate name="A" symbol="CAPACITOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C0402">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="RATING" value="6.3V"/>
+<attribute name="VALUE" value="1nF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CL05A105MP5NNNC" prefix="C" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="RATING" value="10V"/>
+<attribute name="VALUE" value="1uF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
