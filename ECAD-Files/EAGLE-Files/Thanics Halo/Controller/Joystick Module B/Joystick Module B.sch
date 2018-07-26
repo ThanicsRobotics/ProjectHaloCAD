@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9,6 +9,8 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -159,37 +161,6 @@
 <libraries>
 <library name="thanics_robotics">
 <packages>
-<package name="JST-XH_5POS">
-<pad name="1" x="0" y="5.08" drill="1" diameter="1.778"/>
-<pad name="2" x="0" y="2.54" drill="1" diameter="1.778"/>
-<pad name="3" x="0" y="0" drill="1" diameter="1.778"/>
-<pad name="4" x="0" y="-2.54" drill="1" diameter="1.778"/>
-<pad name="5" x="0" y="-5.08" drill="1" diameter="1.778"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="7.62" x2="1.27" y2="7.62" width="0.127" layer="21"/>
-<wire x1="1.27" y1="7.62" x2="1.27" y2="5.08" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-7.62" x2="1.27" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-7.62" x2="1.27" y2="-5.08" width="0.127" layer="21"/>
-</package>
-<package name="JOYSTICK">
-<pad name="2'" x="0" y="-6.6" drill="1.25" diameter="2"/>
-<pad name="1'" x="-2.7" y="-6.6" drill="1.25" diameter="2"/>
-<pad name="3'" x="2.7" y="-6.6" drill="1.25" diameter="2"/>
-<pad name="2" x="-6.6" y="0" drill="1.25" diameter="2"/>
-<pad name="1" x="-6.6" y="2.7" drill="1.25" diameter="2"/>
-<pad name="3" x="-6.6" y="-2.7" drill="1.25" diameter="2"/>
-<pad name="A" x="0" y="4.6" drill="1.25" diameter="2"/>
-<pad name="B" x="4.6" y="0" drill="1.25" diameter="2"/>
-<pad name="P$9" x="0" y="2.35" drill="1.3" diameter="2"/>
-<pad name="P$10" x="0" y="-2.35" drill="1.3" diameter="2"/>
-<wire x1="-6.5" y1="-4.5" x2="-4.5" y2="-4.5" width="0.5" layer="21"/>
-<wire x1="-4.5" y1="-4.5" x2="-4.5" y2="-6.5" width="0.5" layer="21"/>
-<wire x1="1.5" y1="4.5" x2="4.5" y2="4.5" width="0.5" layer="21"/>
-<wire x1="4.5" y1="4.5" x2="4.5" y2="1.5" width="0.5" layer="21"/>
-<wire x1="-6.5" y1="4.5" x2="-1.5" y2="4.5" width="0.5" layer="21"/>
-<wire x1="4.5" y1="-1.5" x2="4.5" y2="-6.5" width="0.5" layer="21"/>
-</package>
 <package name="EDGE_CONNECTOR_20POS_CONTACTS">
 <smd name="10" x="3.8" y="0" dx="3" dy="0.6" layer="16" rot="R90"/>
 <smd name="9" x="3" y="0" dx="3" dy="0.6" layer="16" rot="R90"/>
@@ -215,14 +186,59 @@
 <smd name="19" x="-3" y="-0.4" dx="2.2" dy="0.6" layer="1" rot="R90"/>
 <smd name="20" x="-3.8" y="0" dx="3" dy="0.6" layer="1" rot="R90"/>
 </package>
+<package name="27800-JOYSTICK">
+<pad name="1" x="-11.43" y="12.7" drill="1.016" diameter="1.778"/>
+<pad name="2" x="-11.43" y="10.16" drill="1.016" diameter="1.778"/>
+<pad name="3" x="11.43" y="12.7" drill="1.016" diameter="1.778"/>
+<pad name="4" x="11.43" y="10.16" drill="1.016" diameter="1.778"/>
+<pad name="5" x="-11.43" y="-10.16" drill="1.016" diameter="1.778"/>
+<pad name="6" x="-11.43" y="-12.7" drill="1.016" diameter="1.778"/>
+<pad name="7" x="11.43" y="-10.16" drill="1.016" diameter="1.778"/>
+<pad name="8" x="11.43" y="-12.7" drill="1.016" diameter="1.778"/>
+<wire x1="-13.97" y1="19.05" x2="-13.97" y2="-19.05" width="0.762" layer="21"/>
+<wire x1="-13.97" y1="-19.05" x2="13.97" y2="-19.05" width="0.762" layer="21"/>
+<wire x1="13.97" y1="-19.05" x2="13.97" y2="19.05" width="0.762" layer="21"/>
+<wire x1="13.97" y1="19.05" x2="-13.97" y2="19.05" width="0.762" layer="21"/>
+<text x="-15.24" y="-8.89" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+<hole x="-7.62" y="15.24" drill="3.5"/>
+<hole x="7.62" y="15.24" drill="3.5"/>
+<hole x="-7.62" y="-15.24" drill="3.5"/>
+<hole x="7.62" y="-15.24" drill="3.5"/>
+</package>
 </packages>
 <symbols>
-<symbol name="JOYSTICK">
+<symbol name="EDGE_CONNECTOR_20POS">
+<pin name="1" x="-10.16" y="10.16" length="middle"/>
+<pin name="2" x="-10.16" y="7.62" length="middle"/>
+<pin name="3" x="-10.16" y="5.08" length="middle"/>
+<pin name="4" x="-10.16" y="2.54" length="middle"/>
+<pin name="5" x="-10.16" y="0" length="middle"/>
+<pin name="6" x="-10.16" y="-2.54" length="middle"/>
+<pin name="7" x="-10.16" y="-5.08" length="middle"/>
+<pin name="8" x="-10.16" y="-7.62" length="middle"/>
+<pin name="9" x="-10.16" y="-10.16" length="middle"/>
+<pin name="10" x="-10.16" y="-12.7" length="middle"/>
+<pin name="11" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="12" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="13" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="15" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="14" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="16" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="17" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="18" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="19" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="20" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="12.7" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="17.78" size="3.81" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="JOYSTICK-NSW">
 <pin name="GND" x="10.16" y="-5.08" length="middle" direction="pwr" rot="R180"/>
 <pin name="3V3" x="10.16" y="5.08" length="middle" direction="pwr" rot="R180"/>
 <pin name="VRX" x="10.16" y="0" length="middle" rot="R180"/>
 <pin name="VRY" x="10.16" y="-2.54" length="middle" rot="R180"/>
-<pin name="SW" x="10.16" y="2.54" length="middle" rot="R180"/>
 <wire x1="5.08" y1="7.62" x2="-22.86" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-22.86" y1="7.62" x2="-22.86" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-22.86" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
@@ -262,73 +278,13 @@
 <wire x1="-19.05" y1="5.08" x2="-3.81" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-19.05" y1="-6.35" x2="-19.05" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="5.08" x2="-3.81" y2="3.81" width="0.254" layer="94"/>
 <wire x1="-16.51" y1="-1.27" x2="-17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="0" x2="-19.05" y2="0" width="0.254" layer="94"/>
 <wire x1="-16.51" y1="-7.62" x2="-17.78" y2="-6.35" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="-6.35" x2="-19.05" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-</symbol>
-<symbol name="EDGE_CONNECTOR_20POS">
-<pin name="1" x="-10.16" y="10.16" length="middle"/>
-<pin name="2" x="-10.16" y="7.62" length="middle"/>
-<pin name="3" x="-10.16" y="5.08" length="middle"/>
-<pin name="4" x="-10.16" y="2.54" length="middle"/>
-<pin name="5" x="-10.16" y="0" length="middle"/>
-<pin name="6" x="-10.16" y="-2.54" length="middle"/>
-<pin name="7" x="-10.16" y="-5.08" length="middle"/>
-<pin name="8" x="-10.16" y="-7.62" length="middle"/>
-<pin name="9" x="-10.16" y="-10.16" length="middle"/>
-<pin name="10" x="-10.16" y="-12.7" length="middle"/>
-<pin name="11" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="12" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="13" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="15" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="14" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="16" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="17" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="18" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<pin name="19" x="15.24" y="-10.16" length="middle" rot="R180"/>
-<pin name="20" x="15.24" y="-12.7" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="12.7" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-15.24" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
-<text x="-10.16" y="17.78" size="3.81" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="JOYSTICK">
-<gates>
-<gate name="A" symbol="JOYSTICK" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="JST-XH_5POS">
-<connects>
-<connect gate="A" pin="3V3" pad="2"/>
-<connect gate="A" pin="GND" pad="1"/>
-<connect gate="A" pin="SW" pad="5"/>
-<connect gate="A" pin="VRX" pad="3"/>
-<connect gate="A" pin="VRY" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="&quot;" package="JOYSTICK">
-<connects>
-<connect gate="A" pin="3V3" pad="1 1' A"/>
-<connect gate="A" pin="GND" pad="3 3'"/>
-<connect gate="A" pin="SW" pad="B"/>
-<connect gate="A" pin="VRX" pad="2"/>
-<connect gate="A" pin="VRY" pad="2'"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="EDGE_CONNECTOR_20POS_CONTACTS">
 <gates>
 <gate name="G$1" symbol="EDGE_CONNECTOR_20POS" x="-2.54" y="0"/>
@@ -356,6 +312,24 @@
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="27800-JOYSTICK">
+<gates>
+<gate name="A" symbol="JOYSTICK-NSW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="27800-JOYSTICK">
+<connects>
+<connect gate="A" pin="3V3" pad="1 3"/>
+<connect gate="A" pin="GND" pad="6 8"/>
+<connect gate="A" pin="VRX" pad="2 4"/>
+<connect gate="A" pin="VRY" pad="5 7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -417,6 +391,98 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="spst-tactile-switch">
+<packages>
+<package name="SW4_1825910-G">
+<pad name="1" x="-6.5024" y="4.4958" drill="0.9906" diameter="1.4986" shape="square"/>
+<pad name="3" x="-6.5024" y="0" drill="0.9906" diameter="1.4986"/>
+<pad name="4" x="0" y="0" drill="0.9906" diameter="1.4986"/>
+<pad name="2" x="0" y="4.4958" drill="0.9906" diameter="1.4986"/>
+<wire x1="-5.8674" y1="-0.8636" x2="-0.635" y2="-0.8636" width="0.1524" layer="21"/>
+<wire x1="-0.127" y1="1.0668" x2="-0.127" y2="3.429" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="5.3848" x2="-5.4356" y2="5.3848" width="0.1524" layer="21"/>
+<wire x1="-6.3754" y1="3.429" x2="-6.3754" y2="1.0668" width="0.1524" layer="21"/>
+<text x="-7.0866" y="5.3848" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<wire x1="-6.2484" y1="4.0132" x2="-6.2484" y2="5.0038" width="0.1524" layer="51"/>
+<wire x1="-6.2484" y1="5.0038" x2="-6.985" y2="5.0038" width="0.1524" layer="51"/>
+<wire x1="-6.985" y1="5.0038" x2="-6.985" y2="4.0132" width="0.1524" layer="51"/>
+<wire x1="-6.985" y1="4.0132" x2="-6.2484" y2="4.0132" width="0.1524" layer="51"/>
+<wire x1="-6.2484" y1="-0.508" x2="-6.2484" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="-6.2484" y1="0.508" x2="-6.985" y2="0.4826" width="0.1524" layer="51"/>
+<wire x1="-6.985" y1="0.4826" x2="-6.985" y2="-0.508" width="0.1524" layer="51"/>
+<wire x1="-6.985" y1="-0.508" x2="-6.2484" y2="-0.508" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="0.508" x2="-0.254" y2="-0.508" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-0.508" x2="0.4826" y2="-0.508" width="0.1524" layer="51"/>
+<wire x1="0.4826" y1="-0.508" x2="0.4826" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="0.4826" y1="0.508" x2="-0.254" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="5.0038" x2="-0.254" y2="4.0132" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="4.0132" x2="0.4826" y2="4.0132" width="0.1524" layer="51"/>
+<wire x1="0.4826" y1="4.0132" x2="0.4826" y2="5.0038" width="0.1524" layer="51"/>
+<wire x1="0.4826" y1="5.0038" x2="-0.254" y2="5.0038" width="0.1524" layer="51"/>
+<wire x1="-6.2484" y1="-0.7366" x2="-0.254" y2="-0.7366" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-0.7366" x2="-0.254" y2="5.2578" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="5.2578" x2="-2.9464" y2="5.2578" width="0.1524" layer="51"/>
+<wire x1="-2.9464" y1="5.2578" x2="-3.556" y2="5.2578" width="0.1524" layer="51"/>
+<wire x1="-3.556" y1="5.2578" x2="-6.2484" y2="5.2578" width="0.1524" layer="51"/>
+<wire x1="-6.2484" y1="5.2578" x2="-6.2484" y2="-0.7366" width="0.1524" layer="51"/>
+<wire x1="-2.9464" y1="5.2578" x2="-3.556" y2="5.2578" width="0.1524" layer="51" curve="-180"/>
+<text x="-5.9182" y="4.191" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<text x="-5.2578" y="6.7056" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+</packages>
+<symbols>
+<symbol name="SW4_1825910">
+<pin name="1" x="2.54" y="0" length="middle" direction="pas"/>
+<pin name="2" x="2.54" y="-7.62" length="middle" direction="pas"/>
+<pin name="3" x="38.1" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="4" x="38.1" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="0" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="33.02" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="-12.7" x2="33.02" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="-7.62" x2="33.02" y2="0" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="0" x2="33.02" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0" x2="12.065" y2="0" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="12.065" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="0" x2="28.575" y2="0" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="-7.62" x2="28.575" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-0.635" x2="12.7" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-3.81" x2="12.7" y2="-6.985" width="0.1524" layer="94"/>
+<wire x1="27.94" y1="-0.635" x2="27.94" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="27.94" y1="-3.81" x2="27.94" y2="-6.985" width="0.1524" layer="94"/>
+<wire x1="27.94" y1="-3.81" x2="23.495" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-3.81" x2="17.145" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="18.415" y1="-3.81" x2="22.86" y2="-1.27" width="0.1524" layer="94"/>
+<text x="15.5956" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="14.9606" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="2-1825910-7" prefix="SW">
+<gates>
+<gate name="A" symbol="SW4_1825910" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SW4_1825910-G">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PART_NUMBER" value="218259107" constant="no"/>
+<attribute name="VENDOR" value="TE Connectivity" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -427,24 +493,28 @@
 </class>
 </classes>
 <parts>
-<part name="U$3" library="thanics_robotics" deviceset="JOYSTICK" device="&quot;"/>
 <part name="U$1" library="thanics_robotics" deviceset="EDGE_CONNECTOR_20POS_CONTACTS" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
+<part name="U1" library="thanics_robotics" deviceset="27800-JOYSTICK" device=""/>
+<part name="SW1" library="spst-tactile-switch" deviceset="2-1825910-7" device=""/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$3" gate="A" x="-53.34" y="20.32"/>
 <instance part="U$1" gate="G$1" x="-63.5" y="-33.02"/>
 <instance part="+3V1" gate="G$1" x="-38.1" y="-15.24"/>
 <instance part="GND1" gate="1" x="-43.18" y="-38.1"/>
 <instance part="GND2" gate="1" x="-38.1" y="10.16"/>
 <instance part="+3V2" gate="G$1" x="-38.1" y="33.02"/>
+<instance part="U1" gate="A" x="-53.34" y="20.32"/>
+<instance part="SW1" gate="A" x="-124.46" y="-2.54"/>
+<instance part="+3V3" gate="G$1" x="-127" y="7.62"/>
 </instances>
 <busses>
 </busses>
@@ -456,9 +526,9 @@
 <pinref part="U$1" gate="G$1" pin="12"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="A" pin="SW"/>
-<wire x1="-43.18" y1="22.86" x2="-33.02" y2="22.86" width="0.1524" layer="91"/>
-<label x="-40.64" y="22.86" size="1.778" layer="95"/>
+<pinref part="SW1" gate="A" pin="3"/>
+<wire x1="-86.36" y1="-2.54" x2="-71.12" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-83.82" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VRX" class="0">
@@ -468,9 +538,9 @@
 <pinref part="U$1" gate="G$1" pin="13"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="A" pin="VRX"/>
 <wire x1="-43.18" y1="20.32" x2="-33.02" y2="20.32" width="0.1524" layer="91"/>
 <label x="-40.64" y="20.32" size="1.778" layer="95"/>
+<pinref part="U1" gate="A" pin="VRX"/>
 </segment>
 </net>
 <net name="VRY" class="0">
@@ -480,9 +550,9 @@
 <pinref part="U$1" gate="G$1" pin="14"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="A" pin="VRY"/>
 <wire x1="-43.18" y1="17.78" x2="-33.02" y2="17.78" width="0.1524" layer="91"/>
 <label x="-40.64" y="17.78" size="1.778" layer="95"/>
+<pinref part="U1" gate="A" pin="VRY"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -493,10 +563,16 @@
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="A" pin="3V3"/>
 <wire x1="-43.18" y1="25.4" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="25.4" x2="-38.1" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<pinref part="U1" gate="A" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="SW1" gate="A" pin="1"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="-121.92" y1="-2.54" x2="-127" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-127" y1="-2.54" x2="-127" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -507,10 +583,10 @@
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="A" pin="GND"/>
 <wire x1="-43.18" y1="15.24" x2="-38.1" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="15.24" x2="-38.1" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="U1" gate="A" pin="GND"/>
 </segment>
 </net>
 </nets>
